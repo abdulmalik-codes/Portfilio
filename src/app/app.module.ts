@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './core/nav-bar/nav-bar.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { NavBarComponent } from './core/nav-bar/nav-bar.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NavBarComponent
+    NavBarComponent,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

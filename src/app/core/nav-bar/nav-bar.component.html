@@ -1,7 +1,23 @@
-<nav>
-  <app-button>home</app-button>
-  <app-button>about</app-button>
-  <app-button>experience</app-button>
-  <app-button>projects</app-button>
-  <app-button>contact</app-button>
+<nav [class.nav-extended]="navExtended">
+
+  <img (click)="toggleNav()" src="../../../assets/images/page_logo.png" alt="AM">
+
+  <div class="pages">
+    <ng-container *ngFor="let page of pages">
+
+      <span>
+        <fa-icon [icon]="page.value"></fa-icon>
+        <ng-container *ngIf="navExtended">
+          {{page.label}}
+        </ng-container>
+      </span>
+
+    </ng-container>
+  </div>
+
+  <div class="socials">
+    <fa-icon [icon]="gitHub"></fa-icon>
+    <fa-icon [icon]="gitHub"></fa-icon>
+  </div>
+
 </nav>
