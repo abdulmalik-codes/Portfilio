@@ -1,0 +1,33 @@
+<footer>
+
+  <div class="left">
+    <div class="branch">
+      <fa-icon [icon]="branch"></fa-icon>
+      <p>main</p>
+    </div>
+
+    <div class="notifications">
+
+      <ng-container *ngFor="let notification of notifications">
+        <div class="notification">
+          <fa-icon [icon]="notification.icon"></fa-icon>
+          <p>
+            {{notification.value}}
+          </p>
+        </div>
+
+      </ng-container>
+
+    </div>
+  </div>
+
+  <div class="right">
+    <div class="copy-right">
+      <fa-icon [icon]="copyright"></fa-icon>
+      2024 Abdul-Malik Mohamed
+    </div>
+    <fa-icon [icon]="bell"></fa-icon>
+
+  </div>
+
+</footer>

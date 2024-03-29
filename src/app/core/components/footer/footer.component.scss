@@ -1,0 +1,65 @@
+:host {
+
+  footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #011628;
+
+    width: 100%;
+    height: 2rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    border-top: 1px solid #262A39;
+
+    color: #EFFFF1;
+
+    .left {
+
+      display: flex;
+      gap: 0.5rem;
+      margin-left: 0.5rem;
+
+      .branch {
+        display: flex;
+        align-items: center;
+        gap: 0.2rem;
+      }
+
+      .notifications {
+        display: flex;
+        flex-direction: row;
+
+        &:hover {
+          cursor: pointer;
+          background-color: #1B222F;
+        }
+
+      .notification {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.2rem;
+        margin: 0 0.2rem;
+      }
+    }
+
+    }
+
+    .right {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-right: 0.5rem;
+
+
+      .copy-right {
+        display: flex;
+        gap: 0.2rem;
+      }
+    }
+  }
+}
