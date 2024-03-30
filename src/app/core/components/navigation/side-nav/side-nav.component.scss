@@ -1,0 +1,33 @@
+:host {
+  nav {
+    position: fixed;
+    left: 0;
+    top: 2rem;
+    background-color: #011628;
+    height: 100%;
+    width: 4vw;
+
+    color: #EFFFF1;
+
+
+    .top {
+
+      .icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        height: 3rem;
+        font-size: 1.5rem;
+        cursor: pointer;
+
+      }
+
+      .selected-item {
+        border-left: 2px solid #5F7E97;
+      }
+
+    }
+
+  }
+}
