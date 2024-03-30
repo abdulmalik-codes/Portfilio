@@ -6,7 +6,9 @@ import {
   faCopy,
   faCode,
   faEnvelope,
-  faCodeBranch
+  faCodeBranch,
+  faUserCircle,
+  faGear
 } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -22,6 +24,8 @@ import {
 export class SideNavComponent {
 
   selectedItem = 'copyIcon'
+  userIcon = faUserCircle
+  settingsIcon = faGear
 
   navList = [
     {
