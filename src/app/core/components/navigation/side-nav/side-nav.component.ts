@@ -29,6 +29,10 @@ export class SideNavComponent {
       value: faCopy
     },
     {
+      name: 'branch',
+      value: faCodeBranch
+    },
+    {
       name: 'codeIcon',
       value: faCode
     },
@@ -36,14 +40,11 @@ export class SideNavComponent {
       name: 'envelopeIcon',
       value: faEnvelope
     },
-    {
-      name: 'branch',
-      value: faCodeBranch
-    },
   ]
 
   selectPage(name: string){
-    this.selectedItem = name
+    const selected = this.selectedItem === name
+    this.selectedItem = selected ? '' : name
   }
 
 }
