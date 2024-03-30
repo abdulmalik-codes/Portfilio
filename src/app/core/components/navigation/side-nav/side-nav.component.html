@@ -2,13 +2,9 @@
 
   <div class="top">
     <ng-container *ngFor="let item of navList">
-      <fa-icon
-      class="icon"
-      [class.selected-item]="item.name === selectedItem"
-      [icon]="item.value"
-      (click)="selectPage(item.name)"
-      >
-    </fa-icon>
+      <fa-icon class="icon" [class.selected-item]="item.name === selectedItem" [icon]="item.value"
+        (click)="selectPage(item.name)">
+      </fa-icon>
     </ng-container>
 
   </div>
