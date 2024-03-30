@@ -5,7 +5,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import {
   faCopy,
   faCode,
-  faEnvelope
+  faEnvelope,
+  faCodeBranch
 } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -34,6 +35,10 @@ export class SideNavComponent {
     {
       name: 'envelopeIcon',
       value: faEnvelope
+    },
+    {
+      name: 'branch',
+      value: faCodeBranch
     },
   ]
 
