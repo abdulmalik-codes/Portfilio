@@ -1,6 +1,21 @@
 <nav>
+  <div class="left">
 
-  <div class="left"></div>
-  <div class="right"></div>
+    <i class="devicon-vscode-plain colored"></i>
+
+    <ng-container *ngFor="let item of navList">
+      <p>{{item}}</p>
+    </ng-container>
+
+  </div>
+
+  <div class="middle">
+    Portfolio - Visual Studio Code
+  </div>
+
+  <div class="right">
+    <fa-icon [rotate]="90" [icon]="maximizeWindow"></fa-icon>
+    <fa-icon [rotate]="180" [icon]="maximizeWindow"></fa-icon>
+  </div>
 
 </nav>
