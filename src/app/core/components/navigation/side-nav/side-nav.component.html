@@ -2,7 +2,7 @@
 
   <div class="top">
     <ng-container *ngFor="let item of navList">
-      <fa-icon class="icon" [class.selected-item]="item.name === selectedItem" [icon]="item.value"
+      <fa-icon [routerLink]="item.name" routerLinkActive="router-link-active"  class="icon" [class.selected-item]="item.name === selectedItem" [icon]="item.value"
         (click)="selectPage(item.name)">
       </fa-icon>
     </ng-container>
@@ -10,7 +10,7 @@
   </div>
 
   <div class="bottom">
-    <fa-icon class="icon" [icon]="userIcon"></fa-icon>
+    <fa-icon class="icon" [icon]="userIcon" routerLink="about"></fa-icon>
     <fa-icon class="icon" [icon]="settingsIcon"></fa-icon>
   </div>
 

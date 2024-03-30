@@ -1,12 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import {
   faCopy,
   faCode,
   faEnvelope,
-  faCodeBranch,
   faUserCircle,
   faGear
 } from '@fortawesome/free-solid-svg-icons';
@@ -18,30 +18,27 @@ import {
   standalone: true,
   imports: [
     CommonModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    RouterLink
   ]
 })
 export class SideNavComponent {
 
-  selectedItem = 'copyIcon'
+  selectedItem = 'home'
   userIcon = faUserCircle
   settingsIcon = faGear
 
   navList = [
     {
-      name: 'copyIcon',
+      name: 'home',
       value: faCopy
     },
     {
-      name: 'branch',
-      value: faCodeBranch
-    },
-    {
-      name: 'codeIcon',
+      name: 'projects',
       value: faCode
     },
     {
-      name: 'envelopeIcon',
+      name: 'contact-me',
       value: faEnvelope
     },
   ]
